@@ -1,0 +1,318 @@
+.admin-user-details-page {
+
+    min-height: 100vh;
+
+    padding: 40px;
+
+    background: #f6f7fb;
+
+}
+
+
+.admin-user-details-header {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 25px;
+
+}
+
+
+.admin-user-details-label {
+
+    margin: 0 0 8px;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.5px;
+
+    color: #6b7280;
+
+}
+
+
+.admin-user-details-header h1 {
+
+    margin: 0;
+
+    font-size: 34px;
+
+    color: #111827;
+
+}
+
+
+.admin-user-details-header p:last-child {
+
+    color: #6b7280;
+
+}
+
+
+.back-users-btn {
+
+    padding: 12px 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #111827;
+
+    color: white;
+
+    cursor: pointer;
+
+}
+
+
+.admin-user-summary {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 25px;
+
+    margin-bottom: 25px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 18px rgba(
+            0,
+            0,
+            0,
+            0.05
+        );
+
+}
+
+
+.admin-user-large-avatar {
+
+    width: 70px;
+
+    height: 70px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #111827;
+
+    color: white;
+
+    font-size: 28px;
+
+    font-weight: 700;
+
+}
+
+
+.admin-user-summary h2 {
+
+    margin: 0 0 5px;
+
+    color: #111827;
+
+}
+
+
+.admin-user-summary p {
+
+    margin: 0 0 10px;
+
+    color: #6b7280;
+
+}
+
+
+.admin-user-form {
+
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 4px 18px rgba(
+            0,
+            0,
+            0,
+            0.05
+        );
+
+}
+
+
+.admin-form-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 20px;
+
+}
+
+
+.admin-form-group {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+
+}
+
+
+.admin-form-group label {
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    color: #374151;
+
+}
+
+
+.admin-form-group input,
+.admin-form-group select,
+.admin-form-group textarea {
+
+    width: 100%;
+
+    box-sizing: border-box;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    outline: none;
+
+}
+
+
+.admin-form-group input:focus,
+.admin-form-group select:focus,
+.admin-form-group textarea:focus {
+
+    border-color: #111827;
+
+}
+
+
+.admin-full-width {
+
+    grid-column:
+        1 / -1;
+
+}
+
+
+.admin-form-actions {
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+}
+
+
+.admin-form-actions button {
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+
+}
+
+
+.cancel-btn {
+
+    border: 1px solid #d1d5db;
+
+    background: white;
+
+    color: #374151;
+
+}
+
+
+.save-user-btn {
+
+    border: none;
+
+    background: #111827;
+
+    color: white;
+
+}
+
+
+.save-user-btn:disabled {
+
+    opacity: 0.6;
+
+    cursor: not-allowed;
+
+}
+
+
+.admin-user-details-error {
+
+    padding: 15px;
+
+    margin-bottom: 20px;
+
+    border-radius: 8px;
+
+    background: #fee2e2;
+
+    color: #b91c1c;
+
+}
+
+
+.admin-user-details-loading {
+
+    padding: 60px;
+
+    text-align: center;
+
+    background: white;
+
+    border-radius: 12px;
+
+}

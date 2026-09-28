@@ -1,0 +1,697 @@
+/* ========================================
+   PROPOSAL PAGE
+======================================== */
+
+.proposal-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 40px 20px;
+}
+
+.proposal-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.proposal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.proposal-label {
+    margin: 0 0 8px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #6366f1;
+}
+
+.proposal-header h1 {
+    margin: 0;
+    font-size: 34px;
+    color: #111827;
+}
+
+.proposal-header p:not(.proposal-label) {
+    margin-top: 8px;
+    color: #6b7280;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.proposal-primary-btn,
+.proposal-secondary-btn,
+.proposal-view-btn,
+.proposal-delete-btn,
+.proposal-accept-btn,
+.proposal-reject-btn {
+    border: none;
+    border-radius: 9px;
+    padding: 11px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.proposal-primary-btn {
+    background: #4f46e5;
+    color: white;
+}
+
+.proposal-primary-btn:hover {
+    background: #4338ca;
+}
+
+.proposal-secondary-btn {
+    background: white;
+    color: #374151;
+    border: 1px solid #d1d5db;
+}
+
+.proposal-secondary-btn:hover {
+    background: #f9fafb;
+}
+
+.proposal-view-btn {
+    background: #eef2ff;
+    color: #4338ca;
+}
+
+.proposal-view-btn:hover {
+    background: #e0e7ff;
+}
+
+.proposal-delete-btn {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.proposal-delete-btn:hover {
+    background: #fecaca;
+}
+
+.proposal-accept-btn {
+    background: #16a34a;
+    color: white;
+}
+
+.proposal-accept-btn:hover {
+    background: #15803d;
+}
+
+.proposal-reject-btn {
+    background: #dc2626;
+    color: white;
+}
+
+.proposal-reject-btn:hover {
+    background: #b91c1c;
+}
+
+
+/* ========================================
+   PROJECT CARD
+======================================== */
+
+.proposal-project-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+.proposal-project-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.proposal-project-top span {
+    font-size: 11px;
+    font-weight: 700;
+    color: #6b7280;
+    letter-spacing: 1px;
+}
+
+.proposal-project-top h2 {
+    margin: 7px 0 0;
+    color: #111827;
+}
+
+.proposal-project-top strong {
+    font-size: 22px;
+    color: #16a34a;
+}
+
+.proposal-project-card > p {
+    color: #6b7280;
+    line-height: 1.7;
+    margin: 18px 0;
+}
+
+.proposal-project-meta {
+    display: flex;
+    gap: 50px;
+}
+
+.proposal-project-meta div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.proposal-project-meta span {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.proposal-project-meta strong {
+    color: #374151;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.proposal-form-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+.proposal-form-card h2 {
+    margin: 0;
+    color: #111827;
+}
+
+.proposal-form-description {
+    color: #6b7280;
+    margin-top: 7px;
+    margin-bottom: 28px;
+}
+
+.proposal-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.proposal-form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #374151;
+}
+
+.proposal-form-group input,
+.proposal-form-group textarea,
+.proposal-form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    padding: 12px 14px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+    transition: 0.2s;
+}
+
+.proposal-form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.proposal-form-group input:focus,
+.proposal-form-group textarea:focus,
+.proposal-form-group select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.proposal-form-group small {
+    color: #9ca3af;
+}
+
+.proposal-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.proposal-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+
+/* ========================================
+   RESULT
+======================================== */
+
+.proposal-result-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 20px;
+    color: #6b7280;
+}
+
+.proposal-result-info strong {
+    color: #111827;
+    font-size: 18px;
+}
+
+
+/* ========================================
+   PROPOSAL GRID
+======================================== */
+
+.proposal-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.proposal-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    padding: 22px;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+.proposal-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.proposal-card-top > strong {
+    color: #16a34a;
+    font-size: 19px;
+}
+
+.proposal-card h2 {
+    font-size: 20px;
+    margin: 18px 0 12px;
+    color: #111827;
+}
+
+.proposal-cover {
+    color: #6b7280;
+    line-height: 1.6;
+    min-height: 70px;
+}
+
+.proposal-freelancer {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 15px 0;
+}
+
+.proposal-freelancer span {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.proposal-freelancer strong {
+    color: #374151;
+}
+
+
+/* ========================================
+   STATUS
+======================================== */
+
+.proposal-status {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 700;
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.proposal-status.pending {
+    background: #fef3c7;
+    color: #b45309;
+}
+
+.proposal-status.accepted {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.proposal-status.rejected {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+.proposal-status.withdrawn {
+    background: #e5e7eb;
+    color: #4b5563;
+}
+
+
+/* ========================================
+   META
+======================================== */
+
+.proposal-meta {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    border-top: 1px solid #f0f0f0;
+    padding-top: 15px;
+    margin-top: 18px;
+}
+
+.proposal-meta div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.proposal-meta span {
+    color: #9ca3af;
+    font-size: 12px;
+}
+
+.proposal-meta strong {
+    color: #374151;
+    font-size: 13px;
+}
+
+
+/* ========================================
+   CARD ACTIONS
+======================================== */
+
+.proposal-card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.proposal-card-actions button {
+    flex: 1;
+}
+
+
+/* ========================================
+   EMPTY
+======================================== */
+
+.proposal-empty {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    text-align: center;
+    padding: 70px 25px;
+}
+
+.proposal-empty-icon {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.proposal-empty h2 {
+    margin-bottom: 8px;
+    color: #111827;
+}
+
+.proposal-empty p {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+
+/* ========================================
+   DETAILS
+======================================== */
+
+.proposal-details-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+.proposal-details-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 25px;
+}
+
+.details-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #9ca3af;
+    letter-spacing: 1px;
+}
+
+.proposal-details-top h2 {
+    margin: 8px 0 0;
+    color: #111827;
+}
+
+.proposal-status.large {
+    padding: 8px 14px;
+}
+
+.proposal-details-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 25px 0;
+}
+
+.proposal-details-grid div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.proposal-details-grid span {
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.proposal-details-grid strong {
+    color: #374151;
+}
+
+.proposal-cover-section {
+    border-top: 1px solid #eee;
+    padding-top: 22px;
+    margin-top: 10px;
+}
+
+.proposal-cover-section > span {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: #374151;
+    margin-bottom: 10px;
+}
+
+.proposal-cover-section p {
+    color: #6b7280;
+    line-height: 1.8;
+    white-space: pre-wrap;
+}
+
+.proposal-attachments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.proposal-attachment {
+    padding: 10px 14px;
+    background: #f5f7ff;
+    border-radius: 8px;
+    color: #4338ca;
+    font-size: 13px;
+}
+
+.proposal-details-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    border-top: 1px solid #eee;
+    padding-top: 25px;
+    margin-top: 25px;
+}
+
+
+/* ========================================
+   ERROR / LOADING
+======================================== */
+
+.proposal-error {
+    background: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    padding: 14px 16px;
+    border-radius: 9px;
+    margin-bottom: 20px;
+}
+
+.proposal-loading {
+    max-width: 1200px;
+    margin: 100px auto;
+    text-align: center;
+    color: #6b7280;
+    font-size: 18px;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 900px) {
+
+    .proposal-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .proposal-details-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .proposal-page {
+        padding: 25px 15px;
+    }
+
+    .proposal-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .proposal-header h1 {
+        font-size: 28px;
+    }
+
+    .proposal-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proposal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proposal-details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .proposal-details-top {
+        flex-direction: column;
+    }
+
+    .proposal-project-top {
+        flex-direction: column;
+    }
+
+    .proposal-project-meta {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .proposal-form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .proposal-form-actions button {
+        width: 100%;
+    }
+
+}
+
+.proposal-success {
+    background: #e8f7ee;
+    color: #198754;
+    border: 1px solid #b7e4c7;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.proposal-file-list {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.proposal-file-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 14px;
+    background: #f7f8fa;
+    border: 1px solid #e1e4e8;
+    border-radius: 8px;
+}
+
+
+.proposal-file-item span {
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.proposal-file-item button {
+    border: none;
+    background: transparent;
+    color: #dc3545;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.proposal-file-item button:hover {
+    text-decoration: underline;
+}

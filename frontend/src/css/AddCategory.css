@@ -1,0 +1,134 @@
+.add-category-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 40px 20px;
+}
+
+.add-category-container {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+.add-category-header {
+    margin-bottom: 30px;
+}
+
+.back-category-btn {
+    border: none;
+    background: transparent;
+    color: #4f46e5;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin-bottom: 22px;
+}
+
+.add-category-header p {
+    margin: 0 0 7px;
+    color: #6366f1;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.add-category-header h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 34px;
+}
+
+.add-category-header span {
+    display: block;
+    margin-top: 8px;
+    color: #6b7280;
+}
+
+.add-category-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 5px 20px rgba(15, 23, 42, 0.05);
+}
+
+.form-group {
+    margin-bottom: 23px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    padding: 12px 14px;
+    font-size: 14px;
+    outline: none;
+    background: white;
+    color: #111827;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #6366f1;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.add-category-error {
+    margin-bottom: 20px;
+    padding: 12px 14px;
+    background: #fee2e2;
+    color: #b91c1c;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.add-category-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    padding-top: 8px;
+}
+
+.cancel-category-btn,
+.save-category-btn {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.cancel-category-btn {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.save-category-btn {
+    background: #4f46e5;
+    color: white;
+}
+
+.save-category-btn:hover {
+    background: #4338ca;
+}
+
+.save-category-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}

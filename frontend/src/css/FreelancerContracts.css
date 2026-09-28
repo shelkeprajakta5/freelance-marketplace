@@ -1,0 +1,155 @@
+.freelancer-contracts-page {
+    min-height: 100vh;
+    padding: 40px;
+    background: #f5f7fb;
+}
+
+
+.freelancer-contracts-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.freelancer-contracts-header h2 {
+    margin: 0 0 8px;
+    font-size: 30px;
+}
+
+
+.freelancer-contracts-header p {
+    margin: 0;
+    color: #6b7280;
+}
+
+
+.freelancer-contracts-header button,
+.freelancer-contract-card button {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    background: #2563eb;
+    color: white;
+    cursor: pointer;
+}
+
+
+.freelancer-contracts-header button:hover,
+.freelancer-contract-card button:hover {
+    background: #1d4ed8;
+}
+
+
+.freelancer-contracts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+
+.freelancer-contract-card {
+    background: white;
+    border-radius: 12px;
+    padding: 22px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+.freelancer-contract-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+
+.freelancer-contract-card-header h3 {
+    margin: 0;
+    font-size: 19px;
+}
+
+
+.freelancer-contract-status {
+    padding: 6px 10px;
+    border-radius: 20px;
+    background: #dbeafe;
+    color: #1d4ed8;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+
+.freelancer-contract-status.in-progress {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+
+.freelancer-contract-status.submitted {
+    background: #ede9fe;
+    color: #6d28d9;
+}
+
+
+.freelancer-contract-status.completed {
+    background: #dcfce7;
+    color: #166534;
+}
+
+
+.freelancer-contract-status.cancelled {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+
+.freelancer-contract-info {
+    margin-bottom: 20px;
+}
+
+
+.freelancer-contract-info p {
+    margin: 10px 0;
+    color: #4b5563;
+}
+
+
+.freelancer-contract-info strong {
+    color: #111827;
+}
+
+
+.freelancer-contract-card button {
+    width: 100%;
+}
+
+
+.freelancer-contract-error {
+    padding: 14px;
+    margin-bottom: 20px;
+    background: #fee2e2;
+    color: #991b1b;
+    border-radius: 8px;
+}
+
+
+.freelancer-empty-contracts {
+    background: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+
+.freelancer-empty-contracts h3 {
+    margin-bottom: 10px;
+}
+
+
+.freelancer-empty-contracts p {
+    color: #6b7280;
+}

@@ -1,0 +1,218 @@
+.create-client-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 45px 25px;
+    box-sizing: border-box;
+}
+
+.create-client-container {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.create-client-header {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    padding: 25px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.create-client-header p {
+    margin: 0 0 6px;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.create-client-header h1 {
+    margin: 0;
+    color: #111827;
+    font-size: 27px;
+}
+
+.create-client-header span {
+    display: block;
+    margin-top: 7px;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.create-client-avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 21px;
+    font-weight: 800;
+}
+
+.create-client-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d1d5db;
+    border-radius: 9px;
+    padding: 12px 14px;
+    font-size: 14px;
+    outline: none;
+    font-family: inherit;
+    transition: 0.2s ease;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px #dbeafe;
+}
+
+.create-client-error {
+    background: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    padding: 11px 13px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.create-client-account {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 25px;
+}
+
+.create-client-account h3 {
+    margin: 0 0 15px;
+    color: #111827;
+    font-size: 15px;
+}
+
+.create-client-account div {
+    display: flex;
+    justify-content: space-between;
+    padding: 9px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.create-client-account div:last-child {
+    border-bottom: none;
+}
+
+.create-client-account span {
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.create-client-account strong {
+    color: #111827;
+    font-size: 13px;
+}
+
+.create-client-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.cancel-client-btn,
+.create-client-btn {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.cancel-client-btn {
+    background: #f3f4f6;
+    color: #374151;
+}
+
+.cancel-client-btn:hover {
+    background: #e5e7eb;
+}
+
+.create-client-btn {
+    background: #2563eb;
+    color: white;
+}
+
+.create-client-btn:hover {
+    background: #1d4ed8;
+}
+
+.create-client-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+
+    .create-client-page {
+        padding: 25px 15px;
+    }
+
+    .create-client-header {
+        padding: 20px;
+    }
+
+    .create-client-header h1 {
+        font-size: 22px;
+    }
+
+    .create-client-avatar {
+        width: 45px;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .create-client-card {
+        padding: 20px;
+    }
+
+    .create-client-actions {
+        flex-direction: column-reverse;
+    }
+
+    .cancel-client-btn,
+    .create-client-btn {
+        width: 100%;
+    }
+
+}

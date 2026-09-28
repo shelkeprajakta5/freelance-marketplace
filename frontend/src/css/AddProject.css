@@ -1,0 +1,385 @@
+/* ========================================
+   PROJECT PAGE
+======================================== */
+
+.project-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+
+/* ========================================
+   FORM CONTAINER
+======================================== */
+
+.project-form-container {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #ffffff;
+    border-radius: 16px;
+    box-sizing: border-box;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.project-form-header {
+    margin-bottom: 30px;
+}
+
+.project-label {
+    margin: 0 0 8px;
+    color: #6366f1;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.project-form-header h1 {
+    margin: 0 0 10px;
+    color: #1f2937;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.project-form-header p:last-child {
+    margin: 0;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* ========================================
+   ERROR
+======================================== */
+
+.project-error {
+    margin-bottom: 20px;
+    padding: 13px 15px;
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    border-radius: 8px;
+    color: #dc2626;
+    font-size: 14px;
+}
+
+
+/* ========================================
+   SUCCESS
+======================================== */
+
+.project-success {
+    margin-bottom: 20px;
+    padding: 13px 15px;
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    color: #15803d;
+    font-size: 14px;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+.project-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+
+/* ========================================
+   FORM GROUP
+======================================== */
+
+.project-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.project-form-group label {
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* ========================================
+   INPUT / TEXTAREA / SELECT
+======================================== */
+
+.project-form-group input,
+.project-form-group textarea,
+.project-form-group select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 13px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+    background: #ffffff;
+    color: #1f2937;
+    font-family: inherit;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.project-form-group input,
+.project-form-group select {
+    height: 46px;
+}
+
+.project-form-group textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+
+/* ========================================
+   FOCUS
+======================================== */
+
+.project-form-group input:focus,
+.project-form-group textarea:focus,
+.project-form-group select:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.12);
+}
+
+
+/* ========================================
+   PLACEHOLDER
+======================================== */
+
+.project-form-group input::placeholder,
+.project-form-group textarea::placeholder {
+    color: #9ca3af;
+}
+
+
+/* ========================================
+   SELECT
+======================================== */
+
+.project-form-group select {
+    cursor: pointer;
+}
+
+
+/* ========================================
+   HELP TEXT
+======================================== */
+
+.project-form-group small {
+    color: #6b7280;
+    font-size: 12px;
+}
+
+
+/* ========================================
+   TWO COLUMN ROW
+======================================== */
+
+.project-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+
+/* ========================================
+   FILE INPUT
+======================================== */
+
+.project-form-group input[type="file"] {
+    height: auto;
+    padding: 10px;
+    background: #f9fafb;
+    cursor: pointer;
+}
+
+.project-form-group input[type="file"]::file-selector-button {
+    margin-right: 12px;
+    padding: 9px 14px;
+    border: none;
+    border-radius: 6px;
+    background: #6366f1;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.project-form-group input[type="file"]::file-selector-button:hover {
+    background: #4f46e5;
+}
+
+
+/* ========================================
+   SELECTED FILE
+======================================== */
+
+.selected-file {
+    margin: 2px 0 0;
+    padding: 10px 12px;
+    background: #f5f3ff;
+    border: 1px solid #ddd6fe;
+    border-radius: 7px;
+    color: #4c1d95;
+    font-size: 13px;
+}
+
+.selected-file strong {
+    color: #3730a3;
+    word-break: break-word;
+}
+
+
+/* ========================================
+   FORM ACTIONS
+======================================== */
+
+.project-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    margin-top: 10px;
+    padding-top: 25px;
+    border-top: 1px solid #e5e7eb;
+}
+
+
+/* ========================================
+   BUTTONS
+======================================== */
+
+.project-secondary-btn,
+.project-primary-btn {
+    min-width: 130px;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+
+/* ========================================
+   CANCEL BUTTON
+======================================== */
+
+.project-secondary-btn {
+    background: #ffffff;
+    border: 1px solid #d1d5db;
+    color: #374151;
+}
+
+.project-secondary-btn:hover {
+    background: #f3f4f6;
+}
+
+
+/* ========================================
+   CREATE BUTTON
+======================================== */
+
+.project-primary-btn {
+    background: #6366f1;
+    border: 1px solid #6366f1;
+    color: #ffffff;
+}
+
+.project-primary-btn:hover {
+    background: #4f46e5;
+    border-color: #4f46e5;
+    transform: translateY(-1px);
+}
+
+
+/* ========================================
+   DISABLED BUTTON
+======================================== */
+
+.project-secondary-btn:disabled,
+.project-primary-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* ========================================
+   PROJECT LIST
+======================================== */
+
+.project-list-page {
+    min-height: 100vh;
+    padding: 40px;
+    background: #f5f7fb;
+}
+
+.project-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   PROJECT CARD
+======================================== */
+
+.project-card {
+    padding: 22px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .project-page {
+        padding: 25px 15px;
+    }
+
+    .project-form-container {
+        padding: 25px 20px;
+        border-radius: 12px;
+    }
+
+    .project-form-header h1 {
+        font-size: 25px;
+    }
+
+    .project-form-row {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .project-form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .project-secondary-btn,
+    .project-primary-btn {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,229 @@
+.my-freelancer-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 35px;
+}
+
+.my-profile-header {
+    max-width: 1050px;
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.my-profile-header p {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 0 7px;
+}
+
+.my-profile-header h1 {
+    margin: 0;
+    color: #111827;
+}
+
+.my-profile-header span {
+    display: block;
+    color: #6b7280;
+    margin-top: 6px;
+}
+
+.my-profile-back-btn {
+    padding: 10px 17px;
+    border: 1px solid #2563eb;
+    background: white;
+    color: #2563eb;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.my-profile-card {
+    max-width: 1050px;
+    margin: auto;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 28px;
+}
+
+.my-profile-summary {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.my-profile-avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #dbeafe;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 27px;
+    font-weight: 800;
+}
+
+.my-profile-summary h2 {
+    margin: 0;
+    color: #111827;
+}
+
+.my-profile-summary p {
+    margin: 5px 0;
+    color: #6b7280;
+}
+
+.my-profile-summary span {
+    color: #15803d;
+    font-size: 12px;
+}
+
+.edit-freelancer-btn {
+    margin-left: auto;
+    padding: 10px 16px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.my-profile-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    padding-top: 25px;
+}
+
+.my-info-box {
+    border: 1px solid #e5e7eb;
+    border-radius: 9px;
+    padding: 18px;
+}
+
+.my-info-box span {
+    display: block;
+    color: #6b7280;
+    font-size: 12px;
+    margin-bottom: 8px;
+}
+
+.my-info-box strong {
+    color: #111827;
+    font-size: 14px;
+}
+
+.my-info-box p {
+    color: #374151;
+    line-height: 1.6;
+    font-size: 14px;
+    margin: 0;
+}
+
+.my-info-box a {
+    color: #2563eb;
+    word-break: break-all;
+    font-size: 13px;
+}
+
+.my-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.my-skills span {
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 6px 9px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.full-width {
+    grid-column: 1 / -1;
+}
+
+.profile-not-created {
+    max-width: 600px;
+    margin: 70px auto;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    text-align: center;
+    padding: 50px;
+}
+
+.profile-empty-icon {
+    font-size: 45px;
+}
+
+.profile-not-created h2 {
+    color: #111827;
+}
+
+.profile-not-created p {
+    color: #6b7280;
+}
+
+.profile-not-created button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.my-profile-message {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 700px) {
+    .my-freelancer-page {
+        padding: 20px 15px;
+    }
+
+    .my-profile-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .my-profile-header h1 {
+        font-size: 23px;
+    }
+
+    .my-profile-card {
+        padding: 20px;
+    }
+
+    .my-profile-summary {
+        flex-wrap: wrap;
+    }
+
+    .edit-freelancer-btn {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .my-profile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+}

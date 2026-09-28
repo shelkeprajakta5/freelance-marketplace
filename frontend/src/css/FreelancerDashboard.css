@@ -1,0 +1,465 @@
+/* ================================
+   FREELANCER DASHBOARD
+================================ */
+
+.freelancer-dashboard {
+    min-height: 100vh;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.freelancer-navbar {
+    height: 72px;
+    background: #ffffff;
+    border-bottom: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+
+.freelancer-brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+
+.freelancer-logo {
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #2563eb;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+.freelancer-brand h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+.freelancer-user {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+
+.freelancer-user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+
+.freelancer-user-info strong {
+    font-size: 14px;
+}
+
+
+.freelancer-user-info span {
+    font-size: 12px;
+    color: #6b7280;
+    margin-top: 3px;
+}
+
+
+/* ================================
+   NAV BUTTONS
+================================ */
+
+.freelancer-contract-btn {
+    border: none;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 9px 15px;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+
+.freelancer-contract-btn:hover {
+    background: #dbeafe;
+}
+
+
+.freelancer-logout {
+    border: none;
+    background: #fee2e2;
+    color: #dc2626;
+    padding: 9px 15px;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.freelancer-logout:hover {
+    background: #fecaca;
+}
+
+
+/* ================================
+   MAIN CONTENT
+================================ */
+
+.freelancer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 45px 30px;
+}
+
+
+.freelancer-welcome {
+    margin-bottom: 32px;
+}
+
+
+.freelancer-welcome h1 {
+    margin: 0 0 8px;
+    font-size: 32px;
+    color: #111827;
+}
+
+
+.freelancer-welcome p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* ================================
+   DASHBOARD CARDS
+================================ */
+
+.freelancer-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+
+.freelancer-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 25px;
+    cursor: pointer;
+    transition: 0.2s;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+
+.freelancer-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    border-color: #bfdbfe;
+}
+
+
+.freelancer-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: #eff6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    margin-bottom: 18px;
+}
+
+
+.freelancer-card h3 {
+    margin: 0 0 8px;
+    font-size: 17px;
+}
+
+
+.freelancer-card p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+
+.contract-card {
+    border-color: #bfdbfe;
+}
+
+
+/* ================================
+   CONTRACT SECTION
+================================ */
+
+.freelancer-contract-section {
+    margin-top: 30px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 28px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+
+.freelancer-contract-section h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+}
+
+
+.freelancer-contract-section p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+.freelancer-contract-section button {
+    border: none;
+    background: #2563eb;
+    color: #ffffff;
+    padding: 11px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+
+.freelancer-contract-section button:hover {
+    background: #1d4ed8;
+}
+
+
+/* ================================
+   CLIENT CONTRACT BUTTON
+================================ */
+
+.client-contract-btn {
+    border: none;
+    background: #eff6ff;
+    color: #2563eb;
+    padding: 9px 15px;
+    border-radius: 7px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.client-contract-btn:hover {
+    background: #dbeafe;
+}
+
+
+/* ================================
+   CLIENT CONTRACT PROFILE BUTTON
+================================ */
+
+.contract-profile-btn {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+
+.contract-profile-btn:hover {
+    background: #dbeafe;
+}
+
+/* ========================================
+   MODULE 11 - MESSAGES BUTTON
+======================================== */
+
+.freelancer-message-btn {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.freelancer-message-btn:hover {
+    background: #1d4ed8;
+    transform: translateY(-1px);
+}
+
+
+/* ========================================
+   MESSAGE DASHBOARD CARD
+======================================== */
+
+.message-card {
+    cursor: pointer;
+}
+
+
+.message-card:hover {
+    transform: translateY(-4px);
+}
+
+
+/* ========================================
+   MESSAGE QUICK ACTION
+======================================== */
+
+.freelancer-message-section {
+    margin-top: 24px;
+    padding: 24px;
+    border-radius: 14px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.freelancer-message-section h2 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    color: #111827;
+}
+
+
+.freelancer-message-section p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+.freelancer-message-section button {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+
+.freelancer-message-section button:hover {
+    background: #1d4ed8;
+}
+
+/* ========================================
+   FREELANCER STATISTICS
+======================================== */
+
+.freelancer-statistics {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 35px;
+
+}
+
+
+.freelancer-stat-card {
+
+    background: white;
+
+    padding: 22px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 18px;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+}
+
+
+.freelancer-stat-icon {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 26px;
+
+    background: #f1f5f9;
+
+}
+
+
+.freelancer-stat-card h3 {
+
+    margin: 0 0 6px;
+
+    font-size: 14px;
+
+    color: #64748b;
+
+}
+
+
+.freelancer-stat-card strong {
+
+    font-size: 28px;
+
+    color: #1e293b;
+
+}
+
+
+.review-count {
+
+    display: block;
+
+    font-size: 12px;
+
+    color: #64748b;
+
+    margin-top: 3px;
+
+}

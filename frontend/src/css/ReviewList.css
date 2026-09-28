@@ -1,0 +1,366 @@
+/* ========================================
+   REVIEWS PAGE
+======================================== */
+
+.reviews-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 40px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* ========================================
+   MAIN CONTAINER
+======================================== */
+
+.reviews-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* ========================================
+   HEADER
+======================================== */
+
+.reviews-header {
+    background: white;
+    padding: 35px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.reviews-header p {
+    margin: 0 0 8px;
+    color: #4f46e5;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.reviews-header h1 {
+    margin: 0 0 10px;
+    color: #1f2937;
+    font-size: 34px;
+}
+
+.reviews-header span {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* ========================================
+   ERROR
+======================================== */
+
+.reviews-error {
+    background: #fff1f2;
+    color: #be123c;
+    border: 1px solid #fecdd3;
+    padding: 15px 18px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+
+/* ========================================
+   LOADING
+======================================== */
+
+.reviews-loading {
+    max-width: 1000px;
+    margin: 100px auto;
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: #6b7280;
+    font-size: 16px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+/* ========================================
+   RATING SUMMARY
+======================================== */
+
+.rating-summary {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.average-number {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.average-number strong {
+    color: #111827;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.average-number span {
+    color: #9ca3af;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+/* ========================================
+   STARS
+======================================== */
+
+.review-stars {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.review-stars span {
+    color: #d1d5db;
+    font-size: 22px;
+}
+
+.review-stars span.filled {
+    color: #f59e0b;
+}
+
+.rating-summary p {
+    margin: 12px 0 0;
+    color: #6b7280;
+    font-size: 14px;
+}
+
+
+/* ========================================
+   EMPTY REVIEWS
+======================================== */
+
+.reviews-empty {
+    background: white;
+    padding: 60px 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.reviews-empty > div {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff7ed;
+    border-radius: 50%;
+    font-size: 32px;
+}
+
+.reviews-empty h2 {
+    margin: 0 0 10px;
+    color: #1f2937;
+    font-size: 24px;
+}
+
+.reviews-empty p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 15px;
+}
+
+
+/* ========================================
+   REVIEW LIST
+======================================== */
+
+.review-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+/* ========================================
+   REVIEW CARD
+======================================== */
+
+.review-card {
+    background: white;
+    border-radius: 16px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #eef0f4;
+    transition: 0.2s ease;
+}
+
+.review-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ========================================
+   REVIEW CARD TOP
+======================================== */
+
+.review-card-top {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* ========================================
+   REVIEWER AVATAR
+======================================== */
+
+.reviewer-avatar {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+    border-radius: 50%;
+    background: #4f46e5;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* ========================================
+   REVIEWER INFO
+======================================== */
+
+.reviewer-info {
+    flex: 1;
+}
+
+.reviewer-info h3 {
+    margin: 0 0 4px;
+    color: #1f2937;
+    font-size: 17px;
+}
+
+.reviewer-info span {
+    color: #6b7280;
+    font-size: 13px;
+    text-transform: capitalize;
+}
+
+
+/* ========================================
+   REVIEW DATE
+======================================== */
+
+.review-date {
+    color: #9ca3af;
+    font-size: 13px;
+    white-space: nowrap;
+}
+
+
+/* ========================================
+   REVIEW RATING
+======================================== */
+
+.review-rating {
+    margin-bottom: 12px;
+}
+
+.review-rating .review-stars {
+    justify-content: flex-start;
+}
+
+.review-rating .review-stars span {
+    font-size: 19px;
+}
+
+
+/* ========================================
+   REVIEW COMMENT
+======================================== */
+
+.review-comment {
+    margin: 0;
+    padding: 16px;
+    background: #f8fafc;
+    border-radius: 10px;
+    color: #4b5563;
+    font-size: 15px;
+    line-height: 1.7;
+    border-left: 3px solid #4f46e5;
+}
+
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+
+@media (max-width: 700px) {
+
+    .reviews-page {
+        padding: 25px 15px;
+    }
+
+    .reviews-header {
+        padding: 25px 20px;
+    }
+
+    .reviews-header h1 {
+        font-size: 28px;
+    }
+
+    .rating-summary {
+        padding: 25px 20px;
+    }
+
+    .average-number strong {
+        font-size: 40px;
+    }
+
+    .review-card {
+        padding: 20px;
+    }
+
+    .review-card-top {
+        align-items: flex-start;
+    }
+
+    .review-date {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .review-card-top {
+        flex-wrap: wrap;
+    }
+
+    .review-date {
+        width: 100%;
+        margin-left: 65px;
+    }
+
+    .review-comment {
+        font-size: 14px;
+    }
+
+}

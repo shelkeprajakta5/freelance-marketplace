@@ -1,0 +1,204 @@
+.edit-freelancer-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 35px;
+}
+
+.edit-profile-header {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-profile-header p {
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 0 7px;
+}
+
+.edit-profile-header h1 {
+    margin: 0;
+    color: #111827;
+}
+
+.edit-profile-header span {
+    display: block;
+    color: #6b7280;
+    margin-top: 6px;
+}
+
+.edit-back-btn {
+    border: 1px solid #2563eb;
+    background: white;
+    color: #2563eb;
+    padding: 10px 17px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.freelancer-form {
+    max-width: 850px;
+    margin: auto;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 30px;
+}
+
+.form-section {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.form-section h2 {
+    margin: 0;
+    color: #111827;
+    font-size: 19px;
+}
+
+.form-section > p {
+    margin: 6px 0 22px;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    color: #374151;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    border: 1px solid #d1d5db;
+    border-radius: 7px;
+    padding: 11px 12px;
+    font-size: 14px;
+    outline: none;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: #2563eb;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group small {
+    display: block;
+    margin-top: 5px;
+    color: #9ca3af;
+    font-size: 11px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.cancel-btn {
+    padding: 11px 18px;
+    border: 1px solid #d1d5db;
+    background: white;
+    color: #374151;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.save-profile-btn {
+    padding: 11px 20px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.save-profile-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.success-message {
+    background: #dcfce7;
+    color: #166534;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.error-message {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 12px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    font-size: 13px;
+}
+
+.edit-profile-message {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 650px) {
+    .edit-freelancer-page {
+        padding: 20px 15px;
+    }
+
+    .edit-profile-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .edit-profile-header h1 {
+        font-size: 22px;
+    }
+
+    .freelancer-form {
+        padding: 20px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .form-actions {
+        flex-direction: column-reverse;
+    }
+
+    .form-actions button {
+        width: 100%;
+    }
+}

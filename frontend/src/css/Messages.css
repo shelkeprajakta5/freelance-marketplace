@@ -1,0 +1,521 @@
+.messages-page {
+    min-height: 100vh;
+    background: #f5f7fb;
+    padding: 40px;
+}
+
+
+.messages-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.messages-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+
+.messages-label {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+
+.messages-header h1 {
+    margin: 0;
+    font-size: 32px;
+    color: #172033;
+}
+
+
+.messages-header p:last-child {
+    color: #64748b;
+    margin-top: 8px;
+}
+
+
+.messages-error {
+    background: #fee2e2;
+    color: #b91c1c;
+    border: 1px solid #fecaca;
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+
+.messages-layout {
+    display: grid;
+    grid-template-columns: 320px 1fr;
+    height: 650px;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+
+.conversation-panel {
+    border-right: 1px solid #e5e7eb;
+    background: #ffffff;
+    overflow-y: auto;
+}
+
+
+.conversation-title {
+    padding: 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.conversation-title h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #172033;
+}
+
+
+.conversation-item {
+    width: 100%;
+    border: 0;
+    border-bottom: 1px solid #f1f5f9;
+    background: white;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.conversation-item:hover {
+    background: #f8fafc;
+}
+
+
+.conversation-item.active {
+    background: #eef2ff;
+}
+
+
+.conversation-avatar,
+.chat-user-avatar {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    border-radius: 50%;
+    background: #4f46e5;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+
+.conversation-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+
+.conversation-info strong {
+    color: #172033;
+}
+
+
+.conversation-info span {
+    font-size: 13px;
+    color: #64748b;
+}
+
+
+.empty-conversations {
+    padding: 30px 20px;
+    text-align: center;
+    color: #64748b;
+}
+
+
+.chat-panel {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+
+.no-chat {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #64748b;
+}
+
+
+.no-chat h2 {
+    color: #172033;
+    margin-bottom: 5px;
+}
+
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 17px 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.chat-header h2 {
+    margin: 0;
+    font-size: 17px;
+    color: #172033;
+}
+
+
+.chat-header span {
+    font-size: 13px;
+    color: #64748b;
+}
+
+
+.chat-messages {
+    flex: 1;
+    overflow-y: auto;
+    padding: 25px;
+    background: #f8fafc;
+}
+
+
+.message-row {
+    display: flex;
+    margin-bottom: 14px;
+}
+
+
+.message-row.mine {
+    justify-content: flex-end;
+}
+
+
+.message-row.received {
+    justify-content: flex-start;
+}
+
+
+.message-bubble {
+    max-width: 65%;
+    padding: 11px 14px;
+    border-radius: 12px;
+    background: white;
+    border: 1px solid #e5e7eb;
+}
+
+
+.message-row.mine .message-bubble {
+    background: #4f46e5;
+    color: white;
+    border: none;
+}
+
+
+.message-bubble p {
+    margin: 0 0 5px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+}
+
+
+.message-bubble small {
+    display: block;
+    font-size: 10px;
+    opacity: 0.7;
+    text-align: right;
+}
+
+
+.message-bubble a {
+    color: inherit;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 5px;
+}
+
+
+.chat-empty,
+.chat-loading {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #64748b;
+}
+
+
+.chat-empty p {
+    margin-bottom: 5px;
+}
+
+
+.message-form {
+    display: flex;
+    gap: 10px;
+    padding: 15px;
+    background: white;
+    border-top: 1px solid #e5e7eb;
+}
+
+
+.message-form input {
+    flex: 1;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 12px 14px;
+    outline: none;
+    font-size: 14px;
+}
+
+
+.message-form input:focus {
+    border-color: #4f46e5;
+}
+
+
+.message-form button {
+    border: none;
+    background: #4f46e5;
+    color: white;
+    padding: 0 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.message-form button:hover {
+    background: #4338ca;
+}
+
+
+.messages-loading {
+    text-align: center;
+    padding: 100px;
+    color: #64748b;
+}
+/* ========================================
+   NEW MESSAGE BUTTON
+======================================== */
+
+.new-message-btn {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #2563eb;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.new-message-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* ========================================
+   NEW CONVERSATION PANEL
+======================================== */
+
+.new-conversation-panel {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+.new-conversation-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.new-conversation-header h2 {
+    margin: 0 0 5px;
+}
+
+
+.new-conversation-header p {
+    margin: 0;
+    color: #6b7280;
+}
+
+
+.close-conversation-btn {
+    border: none;
+    background: #f3f4f6;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+/* ========================================
+   CLIENT LIST
+======================================== */
+
+.clients-list {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.client-select-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    padding: 15px 20px;
+    border: none;
+    border-bottom: 1px solid #f0f0f0;
+    background: white;
+    text-align: left;
+    cursor: pointer;
+}
+
+
+.client-select-item:hover {
+    background: #f8fafc;
+}
+
+
+.client-select-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #2563eb;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+}
+
+
+.client-select-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+}
+
+
+.client-select-info strong {
+    font-size: 15px;
+    color: #111827;
+}
+
+
+.client-select-info span {
+    font-size: 13px;
+    color: #6b7280;
+}
+
+
+.start-chat-text {
+    color: #2563eb;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+
+/* ========================================
+   EMPTY CONVERSATIONS
+======================================== */
+
+.empty-conversations {
+    padding: 35px 20px;
+    text-align: center;
+    color: #6b7280;
+}
+
+
+.empty-conversations > div {
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+
+.empty-conversations p {
+    margin-bottom: 15px;
+}
+
+
+.empty-conversations button,
+.start-chat-main-btn {
+    border: none;
+    background: #2563eb;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+
+.empty-conversations button:hover,
+.start-chat-main-btn:hover {
+    background: #1d4ed8;
+}
+
+
+/* ========================================
+   NO CHAT
+======================================== */
+
+.no-chat-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+
+.no-chat h2 {
+    margin-bottom: 8px;
+}
+
+
+.no-chat p {
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+
+/* ========================================
+   LOADING
+======================================== */
+
+.clients-loading,
+.no-clients {
+    padding: 25px;
+    text-align: center;
+    color: #6b7280;
+}
